@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300,300i,4000,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>vet.dp.ua</title>
 </head>
 <body>
-
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -59,7 +59,7 @@
         <img class="intro__photo__buble" src="/img/Buble.png" alt="buble image">
     </section>
 
-    <!-- Услуги -->
+    <!-- Services -->
     <div class="services">
         <div class="container">
             <h1 class="services__header">Услуги</h1>
@@ -157,29 +157,69 @@
     </div>
 
 
-
+    <!-- About Us -->
     <div class="about-us">
         <div class="container">
             <h1 class="about-us__header">Почему выбирают нас?</h1>
-        </div>
-        <div class="about-us__items">
-            <div class="about-us__item">
-                <img class="about-us__image" src="/img/Backpack.png" alt="backpack">
-                <h2 class="about-us__title">Опыт</h2>
-                <div class="about-us__paragraph">Наши врачи имеют многолетний опыт<br> и достижения в сфере ветеринарной<br> медицины и хирургии</div>
-            </div>
-            <div class="about-us__item">
-                <img class="about-us__image" src="/img/Doctor.png" alt="Doctor">
-                <h2 class="about-us__title">Проффесианализм</h2>
-                <div class="about-us__paragraph">У нас применяются только<br>качественные и проверенные годами<br> практики оборудование и методики</div>
-            </div>
-            <div class="about-us__item">
-                <img class="about-us__image" src="/img/Hands_and_heart.png" alt="Hands and heart">
-                <h2 class="about-us__title">Любовь</h2>
-                <div class="about-us__paragraph">Мы любим свою работу и пациентов,<br> поэтому довольными от результата<br> остаются все участники лечения</div>
+            <div class="about-us__items">
+                <div class="about-us__item">
+                    <img class="about-us__image" src="/img/Backpack.png" alt="backpack">
+                    <h2 class="about-us__title">Опыт</h2>
+                    <div class="about-us__paragraph">Наши врачи имеют многолетний опыт<br> и достижения в сфере ветеринарной<br> медицины и хирургии</div>
+                </div>
+                <div class="about-us__item">
+                    <img class="about-us__image" src="/img/Doctor.png" alt="Doctor">
+                    <h2 class="about-us__title">Проффесианализм</h2>
+                    <div class="about-us__paragraph">У нас применяются только<br>качественные и проверенные годами<br> практики оборудование и методики</div>
+                </div>
+                <div class="about-us__item">
+                    <img class="about-us__image" src="/img/Hands_and_heart.png" alt="Hands and heart">
+                    <h2 class="about-us__title">Любовь</h2>
+                    <div class="about-us__paragraph">Мы любим свою работу и пациентов,<br> поэтому довольными от результата<br> остаются все участники лечения</div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Our team -->
+    <div class="team">
+        <div class="container">
+            <div class="team__inner">
+                <h1 class="team__title">Наша команда</h1>
+                <div class="team__slider">
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                            <div class="image-slider__slider swiper-slide">
+                                <img src="./img/72x72.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
