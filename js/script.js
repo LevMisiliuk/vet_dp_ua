@@ -1,12 +1,19 @@
-new Swiper('.swiper-container', {
-    //Arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
+$(function() {
+    /* Slider: https://github.com/kenwheeler/slick/ */
+    $('.patiens__slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        dots: true
+      });
 
-    //How many slides show
-    slidesPerView: 4,
+    $('.comments__slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        dots: true
+    })
 
-    autoHeight: true,
-});
+})
