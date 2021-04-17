@@ -18,6 +18,7 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 /* Vendor */
 /* Slider */
@@ -569,12 +570,17 @@ header {
 .location__button:hover {
   background-color: #0088ef;
 }
-.location__map {
+.location__google-map {
   filter: drop-shadow(0px 2px 16px rgba(60, 171, 255, 0.16));
   border-radius: 8px;
+  margin-bottom: 55px;
 }
 .footer {
   background-color: rgba(60, 171, 255, 0.32);
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
 }
 .footer__logo-tagline {
   display: flex;
@@ -585,7 +591,41 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 24px;
   padding-bottom: 60px;
   flex-wrap: wrap;
+}
+.footer__navigation {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__navigation__first-block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.footer__navigation__first-block span {
+  padding: 15px 0px;
+}
+.footer__navigation__second-block {
+  display: flex;
+  flex-direction: column;
+}
+.footer__navigation__second-block span {
+  padding: 15px 0px;
+}
+.footer__developed-by {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-right: 72px;
+  text-align: end;
+}
+.footer__developed-by span {
+  padding: 15px 0px;
+  white-space: nowrap;
+}
+.footer__developed-by strong {
+  color: #dd5d5d;
 }

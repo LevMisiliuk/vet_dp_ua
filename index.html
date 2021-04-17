@@ -644,7 +644,21 @@
                         Позвонить нам
                     </button>
                 </div>
-                <img class="locations__map" src="./img/Map.png" alt="">
+                <div class="location__google-map">
+                    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                        var setting = {"height":488,"width":1080,"zoom":17,"queryString":"Ветеринарна Клініка На Соколі, улица Космонавта Комарова, Днипро, Днепропетровская область, Украина","place_id":"ChIJATZOCaH820ARG33D4e-l_Gc","satellite":false,"centerCoord":[48.41222036065275,35.05174302535537],"cid":"0x67fca5efe1c37d1b","lang":"ru","cityUrl":"/ukraine/dnipro-33401","cityAnchorText":"Карта [CITY1], Днепропетровская область, Украина","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"462403"};
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=462403';
+                        s.async = true;
+                        s.onload = function (e) {
+                          window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                      })();</script><a href="https://1map.com/ru/map-embed">1 Map</a></div>
+                </div>
             </div>
         </div>
     </div>
@@ -652,26 +666,40 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__logo-tagline">
-                    <div class="logo__avatar">
-                        <img src="./img/Logo.png" alt="Logo">
+                <div class="footer__logo">
+                    <div class="footer__logo-tagline">
+                        <div class="logo__avatar">
+                            <img src="./img/Logo.png" alt="Logo">
+                        </div>
+                        <div class="logo__content">
+                            vet.dp.ua
+                        </div>
                     </div>
-                    <div class="logo__content">
-                        vet.dp.ua
+                    <div class="footer__logo-tagline">
+                        <h5 class="footer__tagline">Человеческое отношение<br> к животным</h5>
                     </div>
-                    <h5 class="footer__tagline">Человеческое отношение<br> к животным</h5>
                 </div>
+                
+               
+                
                
                 <div class="footer__navigation">
-                    <span>Услуги</span>
-                    <span>Преимущества</span>
-                    <span>Команда</span>
-                    <span>Пациенты</span>
-                    <span>Отзывы</span>
-                    <span>Контакты</span>
+                    <div class="footer__navigation__first-block">
+                        <span>Услуги</span>
+                        <span>Преимущества</span>
+                        <span>Команда</span>
+                    </div>
+                    <div class="footer__navigation__second-block">
+                        <span>Пациенты</span>
+                        <span>Отзывы</span>
+                        <span>Контакты</span>
+                    </div>
+                    
                 </div>
                 <div class="footer__developed-by">
-
+                    <span>© Vet.dp.ua | 2007-2021</span>
+                    <span>Designed by <strong>Vladimir Kapustian</strong></span>
+                    <span>Developed by <strong>Lev Misiliuk</strong></span>
                 </div>
             </div>
         </div>
