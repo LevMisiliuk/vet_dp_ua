@@ -2,7 +2,7 @@
 
 .team {
     margin-top: 320px;
-    margin-bottom: 400px;
+    margin-bottom: 150px;
 }
 
 .team__title {
@@ -16,75 +16,161 @@
     margin-bottom: 75px;
 }
 
+
+.team__doctors-info {
+    display: flex;
+}
+
+
 .team__slider {
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .slider-navigation {
+        width: 100%;
+        width: 384px;
+        height: 72px;
+
+        margin-bottom: 32px;
+    }
+
+    .slider-main-image {
+        width: 100%;
+        left: 830px;
+        img {
+            width: 384px;
+            height: 632px;
+        }
+    }
 }
 
-.image-slider {
-    width: 500px;
+.valeriy-misiliuk {
+    display: flex;
+}
+.team__doctor-name {
+    // margin-left: -500px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #3CABFF;
+    align-self: center;
 }
 
-.image-slider__wrapper {
+.team__doctor-position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    strong {
+        padding-right: 32px;
+    }
     
 }
 
+.team__doctor-education {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 16px;
 
-
-
-
-
-
-
-
-
-
-
-.image-slider .swiper-button-prev::after {
-    color: white;
-    font-size: 5px;
-    background-color: @primary_blue;
-    padding: 19px 6px;
-
-    margin-right: 15px;
-    border-radius: 12px 0px 0px 12px;
-}
-.image-slider .swiper-button-next::after {
-    color: white;
-    font-size: 5px;
-    background-color: @primary_blue;
-    padding: 19px 6px;
-
-    margin-left: 15px;
-    border-radius: 0px 45% 45% 0px;
+    strong {
+        padding-right: 11px;
+    }
 }
 
+.team__doctor-experience {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 
-.image-mini-slider {
+    display: flex;
+    padding-top: 16px;
+    strong {
+        padding-right: 83px;
+    }
 }
 
-.image-mini-slider__wrapper {
+.team__other-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    
+    img {
+        margin-right: 8px;
+    }
 }
 
-.image-mini-slider__slide {
-    opacity: 0.2;
-    transition: opacity 0.3s ease 0s;
+.team__buttons {
+    display: flex;
 }
 
-.image-mini-slider__slide.swiper-slide-thumb-active {
-    opacity: 1;
+.team__button-diploma {
+    button {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    
+        white-space: nowrap;
+    
+        margin-right: 16px;
+        width: 212px;
+        height: 56px;
+        margin-top: 40px;
+        padding: 12px 16px;
+        background: #3CABFF;
+        border-radius: 8px;
+        
+        border: none;
+        transition: 0.2s all linear;
+        &:hover {
+            background-color: darken(@primary_blue, 15%);
+        }
+    }
 }
 
-.image-mini-slider__image {
-    position: relative;
-    padding: 0px 0px 30% 0px;
-    cursor: pointer;
+.team__button-identity {
+    button {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    
+        white-space: nowrap;
+    
+        margin-right: 16px;
+        width: 212px;
+        height: 56px;
+        margin-top: 40px;
+        padding: 12px 16px;
+        background: #3CABFF;
+        border-radius: 8px;
+        
+        border: none;
+        transition: 0.2s all linear;
+        &:hover {
+            background-color: darken(@primary_blue, 15%);
+        }
+    }
 }
 
-.image-mini-slider__image img {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+.team__doctors-main-image {
+    img {
+        width: 395px;
+        height: 632px;
+
+        border-radius: 8px;
+        border: none;
+    }
+    
 }

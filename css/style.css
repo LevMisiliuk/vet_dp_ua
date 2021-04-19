@@ -141,6 +141,70 @@ body {
 .slick-dots button:focus {
   outline: none;
 }
+/* Arrows */
+.slick-prev {
+  background: rgba(60, 171, 255, 0.4);
+  border-radius: 8px 0px 0px 8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  z-index: 10;
+  display: block;
+  height: 58px;
+  width: 24px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 50;
+  border: none;
+  outline: none;
+  background-image: url(/img/Arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: 5px;
+  transition: 0.2s all linear;
+}
+.slick-prev:hover {
+  background-color: #3CABFF;
+}
+.slick-next {
+  background: rgba(60, 171, 255, 0.4);
+  border-radius: 0px 8px 8px 0px;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  height: 58px;
+  width: 24px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 50;
+  border: none;
+  outline: none;
+  transition: 0.2s all linear;
+  background-image: url(/img/Arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: 5px;
+}
+.slick-next:hover {
+  background-color: #3CABFF;
+}
+.slider-navigation .slick-current img {
+  border: 4px solid #3CABFF;
+  border-radius: 11px;
+}
 /* Blocks */
 .container {
   width: 100%;
@@ -346,7 +410,7 @@ header {
 }
 .team {
   margin-top: 320px;
-  margin-bottom: 400px;
+  margin-bottom: 150px;
 }
 .team__title {
   font-style: normal;
@@ -356,47 +420,127 @@ header {
   text-align: center;
   margin-bottom: 75px;
 }
+.team__doctors-info {
+  display: flex;
+}
 .team__slider {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.image-slider {
-  width: 500px;
-}
-.image-slider .swiper-button-prev::after {
-  color: white;
-  font-size: 5px;
-  background-color: #3CABFF;
-  padding: 19px 6px;
-  margin-right: 15px;
-  border-radius: 12px 0px 0px 12px;
-}
-.image-slider .swiper-button-next::after {
-  color: white;
-  font-size: 5px;
-  background-color: #3CABFF;
-  padding: 19px 6px;
-  margin-left: 15px;
-  border-radius: 0px 45% 45% 0px;
-}
-.image-mini-slider__slide {
-  opacity: 0.2;
-  transition: opacity 0.3s ease 0s;
-}
-.image-mini-slider__slide.swiper-slide-thumb-active {
-  opacity: 1;
-}
-.image-mini-slider__image {
-  position: relative;
-  padding: 0px 0px 30% 0px;
-  cursor: pointer;
-}
-.image-mini-slider__image img {
-  object-fit: cover;
-  position: absolute;
+.team__slider .slider-navigation {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 384px;
+  height: 72px;
+  margin-bottom: 32px;
+}
+.team__slider .slider-main-image {
+  width: 100%;
+  left: 830px;
+}
+.team__slider .slider-main-image img {
+  width: 384px;
+  height: 632px;
+}
+.valeriy-misiliuk {
+  display: flex;
+}
+.team__doctor-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3CABFF;
+  align-self: center;
+}
+.team__doctor-position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+}
+.team__doctor-position strong {
+  padding-right: 32px;
+}
+.team__doctor-education {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding-top: 16px;
+}
+.team__doctor-education strong {
+  padding-right: 11px;
+}
+.team__doctor-experience {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding-top: 16px;
+}
+.team__doctor-experience strong {
+  padding-right: 83px;
+}
+.team__other-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.team__other-info img {
+  margin-right: 8px;
+}
+.team__buttons {
+  display: flex;
+}
+.team__button-diploma button {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  white-space: nowrap;
+  margin-right: 16px;
+  width: 212px;
+  height: 56px;
+  margin-top: 40px;
+  padding: 12px 16px;
+  background: #3CABFF;
+  border-radius: 8px;
+  border: none;
+  transition: 0.2s all linear;
+}
+.team__button-diploma button:hover {
+  background-color: #0088ef;
+}
+.team__button-identity button {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  white-space: nowrap;
+  margin-right: 16px;
+  width: 212px;
+  height: 56px;
+  margin-top: 40px;
+  padding: 12px 16px;
+  background: #3CABFF;
+  border-radius: 8px;
+  border: none;
+  transition: 0.2s all linear;
+}
+.team__button-identity button:hover {
+  background-color: #0088ef;
+}
+.team__doctors-main-image img {
+  width: 395px;
+  height: 632px;
+  border-radius: 8px;
+  border: none;
 }
 .patiens {
   margin-bottom: 250px;

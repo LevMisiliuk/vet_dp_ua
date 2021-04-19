@@ -144,3 +144,80 @@
         }
     }
 }
+
+/* Arrows */
+.slick-prev {
+    background: rgba(60, 171, 255, 0.4);
+    border-radius: 8px 0px 0px 8px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    z-index: 10;
+    display: block;
+    height: 58px;
+    width: 24px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    color: transparent;
+    top: 50%;
+    right: 100%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 50;
+    border: none;
+    outline: none;
+    background-image: url(/img/Arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-position-x: 5px;
+
+    transition: 0.2s all linear;
+
+    &:hover {
+        background-color: @primary_blue;
+    }
+
+}
+
+.slick-next {
+    background: rgba(60, 171, 255, 0.4);
+    border-radius: 0px 8px 8px 0px;
+
+    position: absolute;
+    z-index: 10;
+    display: block;
+    height: 58px;
+    width: 24px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    color: transparent;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 50;
+    border: none;
+    outline: none;
+    transition: 0.2s all linear;
+
+    background-image: url(/img/Arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-position-x: 5px;
+
+    &:hover {
+        background-color: @primary_blue;
+    }
+}
+
+.slider-navigation {
+    .slick-current {
+        img {
+            border: 4px solid @primary_blue;
+            border-radius: 11px;
+        }
+    }
+}

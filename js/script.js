@@ -5,7 +5,9 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000
       });
 
     $('.comments__slider').slick({
@@ -15,5 +17,22 @@ $(function() {
         arrows: false,
         dots: true
     })
+
+    
+    $('.slider-main-image').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-navigation'
+      });
+      $('.slider-navigation').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-main-image',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
 
 })
