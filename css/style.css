@@ -201,10 +201,6 @@ body {
 .slick-next:hover {
   background-color: #3CABFF;
 }
-.slider-navigation .slick-current img {
-  border: 4px solid #3CABFF;
-  border-radius: 11px;
-}
 /* Blocks */
 .container {
   width: 100%;
@@ -408,6 +404,70 @@ header {
   line-height: 24px;
   color: #333;
 }
+.js .slider-single > div:nth-child(1n+2) {
+  display: none;
+}
+.js .slider-single.slick-initialized > div:nth-child(1n+2) {
+  display: block;
+}
+.div {
+  float: right;
+}
+.team__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+.column {
+  margin-top: 2.6rem;
+}
+#page {
+  margin: 150px 0;
+}
+.h3 {
+  background: #f0f0f0;
+  color: #3498db;
+  font-size: 2.25rem;
+  margin: 0.5rem;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+.second-block {
+  position: relative;
+  left: 50;
+}
+.slider-single {
+  margin-bottom: 50px;
+  max-width: 384px;
+  float: right;
+}
+.slider-nav {
+  margin-bottom: 150px;
+  max-width: 384px;
+}
+.slider-single h3 {
+  line-height: 10rem;
+}
+.slider-nav h3::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+.slider-nav h3 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-nav .slick-slide {
+  cursor: pointer;
+}
+.slick-slide.is-active h3 {
+  color: #c00;
+  background-color: #fff;
+}
 .team {
   margin-top: 320px;
   margin-bottom: 150px;
@@ -422,6 +482,7 @@ header {
 }
 .team__doctors-info {
   display: flex;
+  max-width: 800px;
 }
 .team__slider {
   display: flex;
