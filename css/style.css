@@ -410,6 +410,9 @@ header {
 .js .slider-single.slick-initialized > div:nth-child(1n+2) {
   display: block;
 }
+.slider-text {
+  margin-right: 375px;
+}
 .div {
   float: right;
 }
@@ -439,16 +442,16 @@ header {
   left: 50;
 }
 .slider-single {
-  margin-bottom: 50px;
   max-width: 384px;
   float: right;
 }
 .slider-nav {
-  margin-bottom: 150px;
+  margin-bottom: 32px;
   max-width: 384px;
 }
 .slider-single h3 {
   line-height: 10rem;
+  height: 632px;
 }
 .slider-nav h3::before {
   content: "";
@@ -512,6 +515,7 @@ header {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+  margin-bottom: 52px;
   color: #3CABFF;
   align-self: center;
 }
@@ -552,6 +556,7 @@ header {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  flex-wrap: wrap;
 }
 .team__other-info img {
   margin-right: 8px;

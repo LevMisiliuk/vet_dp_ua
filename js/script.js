@@ -26,21 +26,23 @@ $(function() {
       fade: false,
       adaptiveHeight: true,
       infinite: false,
-     useTransform: true,
+      useTransform: true,
       speed: 400,
       cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+      draggable: false
     });
 
     $('.slider-text').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      fade: false,
+      fade: true,
       adaptiveHeight: true,
       infinite: false,
-     useTransform: true,
-      speed: 400,
+      useTransform: true,
+      speed: 1000,
       cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+      draggable: false
     });
    
     $('.slider-nav')
