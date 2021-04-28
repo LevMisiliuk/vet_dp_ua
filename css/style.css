@@ -340,12 +340,6 @@ header {
   box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
   border-radius: 8px;
 }
-.services__card:hover .block {
-  display: block;
-}
-.services__card:hover .block .services__content {
-  display: none;
-}
 .services__image {
   display: block;
   max-width: 100%;
@@ -354,6 +348,12 @@ header {
 .services__content {
   padding-top: 1.06rem;
   padding-bottom: 1.06rem;
+}
+.services__content:hover {
+  background-color: #3CABFF;
+}
+.services__content:hover .services__title {
+  color: white;
 }
 .services__title {
   text-align: center;
@@ -412,6 +412,12 @@ header {
 }
 .slider-text {
   margin-right: 375px;
+}
+.slider-nav__small-images img {
+  border-radius: 8px;
+}
+.slider-single__main-photo img {
+  border-radius: 8px;
 }
 .div {
   float: right;
@@ -561,6 +567,14 @@ header {
 .team__other-info img {
   margin-right: 8px;
 }
+.team__other-info .team__other-info__block {
+  display: flex;
+}
+.team__other-info .team__other-info__block img {
+  margin-top: 25px;
+  height: 10px;
+  width: 10px;
+}
 .team__buttons {
   display: flex;
 }
@@ -621,10 +635,11 @@ header {
 .patiens__slide {
   width: 280px;
   height: 360px;
-  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
-  border-radius: 8px;
-  margin: 40px 32px 24px 40px;
+  margin: 0px 12px 0px 12px;
   cursor: pointer;
+}
+.patiens__slide img {
+  border-radius: 8px 8px 0 0 ;
 }
 .patiens__slide:focus {
   outline: none;
@@ -633,13 +648,18 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 280px;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+  border-radius: 0 0 8px 8px;
+}
+.patient__content:hover {
+  background-color: #3CABFF;
 }
 .patient__name {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #3CABFF;
 }
 .patient__species {
   font-style: normal;

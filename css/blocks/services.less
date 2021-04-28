@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .services__card {
@@ -33,12 +34,7 @@
     box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
     border-radius: 8px;
 
-    &:hover .block{
-        display:block;
-        .services__content {
-            display: none;
-        }
-    }
+    
 }
 
 .services__image {
@@ -50,6 +46,15 @@
 .services__content {
     padding-top: 1.06rem;
     padding-bottom: 1.06rem;
+
+    &:hover {
+        .services__title {
+            color: white;
+        }
+       
+        background-color: @primary_blue;
+        
+    }
 }
 
 .services__title {
