@@ -5,7 +5,7 @@
 
 .intro_inner {
     display: flex;
-    position: relative;
+    position: relative;    
 }
 
 .intro__content {
@@ -22,38 +22,47 @@
     margin-top: 16px;
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 64px;
 }
 
 .intro__btn {
-    width: 212px;
-    height: 56px;
-    margin-top: 40px;
-    padding: 12px 16px;
-    background: #3CABFF;
-    border-radius: 8px;
-    
-    border: none;
-    transition: 0.2s all linear;
-    &:hover {
-        background-color: darken(@primary_blue, 15%);
-    }
-}
-
-.intro__btn__text {
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     color: #fff;
 
     white-space: nowrap;
+
+    text-decoration: none;
+
+    color: white;
+    background: #3CABFF;
+
+    width: 212px;
+    height: 56px;
+
+    padding: 12px 16px;
+    
+    border-radius: 8px;
+    border: none;
+
+    transition: 0.2s all linear;
+
+    &:hover {
+        background-color: darken(@primary_blue, 15%);
+    }
+}
+
+.intro__btn__text {
+    
 }
 
 .intro__photo__buble {
     position: absolute;
     top: -1px;
     bottom: -175px;
-    right: -50px;
-    z-index: 0;
+    right: 0px;
+    z-index: -1;
 }
 
 .intro__photo__cat {

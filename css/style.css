@@ -13,6 +13,7 @@ h6 {
 }
 html {
   font-size: 15px;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -248,8 +249,10 @@ header {
   color: #3CABFF;
 }
 .phone_number {
+  z-index: 10;
   font-weight: bold;
   list-style-type: none;
+  background-color: unset;
   border: none;
 }
 .intro {
@@ -271,13 +274,20 @@ header {
   margin-top: 16px;
   font-size: 32px;
   line-height: 32px;
+  margin-bottom: 64px;
 }
 .intro__btn {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  background: #3CABFF;
   width: 212px;
   height: 56px;
-  margin-top: 40px;
   padding: 12px 16px;
-  background: #3CABFF;
   border-radius: 8px;
   border: none;
   transition: 0.2s all linear;
@@ -285,19 +295,12 @@ header {
 .intro__btn:hover {
   background-color: #0088ef;
 }
-.intro__btn__text {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #fff;
-  white-space: nowrap;
-}
 .intro__photo__buble {
   position: absolute;
   top: -1px;
   bottom: -175px;
-  right: -50px;
-  z-index: 0;
+  right: 0px;
+  z-index: -1;
 }
 .intro__photo__cat {
   position: absolute;
@@ -348,6 +351,7 @@ header {
 .services__content {
   padding-top: 1.06rem;
   padding-bottom: 1.06rem;
+  transition: 0.3s all linear;
 }
 .services__content:hover {
   background-color: #3CABFF;
@@ -430,6 +434,7 @@ header {
 }
 .column {
   margin-top: 2.6rem;
+  margin-bottom: 250px;
 }
 #page {
   margin: 150px 0;
@@ -578,31 +583,37 @@ header {
 .team__buttons {
   display: flex;
 }
-.team__button-diploma button {
+.team__button-diploma {
+  margin: 20px 20px 20px 0;
+}
+.team__button-diploma a {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   color: #fff;
   white-space: nowrap;
-  margin-right: 16px;
+  text-decoration: none;
   width: 212px;
   height: 56px;
-  margin-top: 40px;
   padding: 12px 16px;
   background: #3CABFF;
   border-radius: 8px;
   border: none;
   transition: 0.2s all linear;
 }
-.team__button-diploma button:hover {
+.team__button-diploma a:hover {
   background-color: #0088ef;
 }
-.team__button-identity button {
+.team__button-identity {
+  margin: 20px 20px 20px 0;
+}
+.team__button-identity a {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   color: #fff;
   white-space: nowrap;
+  text-decoration: none;
   margin-right: 16px;
   width: 212px;
   height: 56px;
@@ -613,7 +624,7 @@ header {
   border: none;
   transition: 0.2s all linear;
 }
-.team__button-identity button:hover {
+.team__button-identity a:hover {
   background-color: #0088ef;
 }
 .team__doctors-main-image img {
@@ -631,6 +642,7 @@ header {
   font-size: 48px;
   line-height: 48px;
   text-align: center;
+  margin-bottom: 40px;
 }
 .patiens__slide {
   width: 280px;
@@ -651,9 +663,12 @@ header {
   width: 280px;
   box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
   border-radius: 0 0 8px 8px;
+  transition: 0.3s all linear;
+  padding: 16px 24px;
 }
 .patient__content:hover {
   background-color: #3CABFF;
+  color: white;
 }
 .patient__name {
   font-style: normal;
