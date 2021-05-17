@@ -1,60 +1,46 @@
 // main: ../style.less
 
-.services {
-    padding-top: 13.3rem;
-
+.services-mobile {
+    display: none;
     @media @mobile {
-        display: none;
+        display: block;
     }
 }
 
-.services__header {
+.services-mobile__header {
+    font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 32px;
 
+    margin-top: 48px;
     text-align: center;
 }
 
-.services__cards {
+.services-mobile__slider {
     padding-top: 2.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
 }
 
-.services__card {
+.services-mobile__slide {
     overflow: hidden;
 
-    position:relative;
-
-    margin-left: 1rem;
-    margin-bottom: 2.6rem;
-
-    width: 280px;
-    height: 224px;
-
-    box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
-    border-radius: 8px;
-
-    
+    width: 250px;
 }
 
-.services__image {
+.services-mobile__image {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-.services__content {
+.services-mobile__content {
     padding-top: 1.06rem;
     padding-bottom: 1.06rem;
 
     transition: 0.3s all linear;
 
     &:hover {
-        .services__title {
+        .services-mobile__title {
             color: white;
         }
        
@@ -88,3 +74,4 @@
     background: @primary_blue;
     display:none;
 }
+

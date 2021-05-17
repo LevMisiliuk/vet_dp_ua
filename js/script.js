@@ -10,6 +10,27 @@ $(function() {
         autoplaySpeed: 2000
       });
 
+    $('.services-mobile__cards__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 2000
+      });
+
+      
+    $('.about-us-mobile__slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 2000
+    });
+
     $('.comments__slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -36,7 +57,7 @@ $(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      fade: true,
+      fade: false,
       adaptiveHeight: true,
       infinite: false,
       useTransform: true,
@@ -97,35 +118,15 @@ $(function() {
       $('.slider-single').slick('slickGoTo', goToSingleSlide);
       $('.slider-text').slick('slickGoTo', goToSingleSlide);
     });
-    function DropDown(el) {
-      this.dd = el;
-      this.placeholder = this.dd.children('span');
-      this.opts = this.dd.find('ul.dropdown > li');
-      this.val = '';
-      this.index = -1;
-      this.initEvents();
-     }
-     DropDown.prototype = {
-      initEvents : function() {
-      var obj = this;
-     
-      obj.dd.on('click', function(event){
-      $(this).toggleClass('active');
-      return false;
-      });
-     
-      obj.opts.on('click',function(){
-      var opt = $(this);
-      obj.val = opt.text();
-      obj.index = opt.index();
-      obj.placeholder.text('Gender: ' + obj.val);
-      });
-      },
-      getValue : function() {
-      return this.val;
-      },
-      getIndex : function() {
-      return this.index;
-      }
-     }
+
+    //active header
+    $(window).on('scroll', function(event) {
+      event.preventDefault();
+      $('.header').toggleClass("active", $(this).scrollTop() > 2);
+    });
+
+    //burger
+    $('.header__burger').click(function(e) {
+      $('.header__burger, .nav').toggleClass('active')
+    })
 })

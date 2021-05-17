@@ -1,28 +1,108 @@
 // main: ../style.less
 
-
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .nav__link {
-    padding-left: 40px;
-    text-decoration: none;
-    color: @black;
-    font-size: 1.2rem;
-    font-weight: 400;
-    transition: 0.2s linear all;
-    align-items: center;
-    &:hover {
-        color: @primary_blue;
-    }
+  padding-left: 40px;
+  text-decoration: none;
+  color: @black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: 0.2s linear all;
+  align-items: center;
+  &:hover {
+    color: @primary_blue;
+  }
+
+  @media @mobile {
+    padding-left: 0;
+  }
 }
 .phone_number {
-    z-index: 10;
-    font-weight: bold;
-    list-style-type: none;
+  z-index: 10;
+  font-weight: bold;
+  list-style-type: none;
 
-    background-color: unset;
+  background-color: unset;
 
-    border: none;
+  border: none;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media @tablet {
+  .phone_number {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    &.active {
+      top: 0;
+    }
+
+    a {
+      margin-top: 35px;
+    }
+  }
 }

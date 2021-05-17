@@ -1,7 +1,16 @@
 // main: ../style.less
 
 header {
-    padding-top: 1.1rem;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    &.active {
+        background-color: white;
+    }
 }
 
 .header__inner {
@@ -9,4 +18,9 @@ header {
     align-self: center;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+
+    position: relative;
+    z-index: 2;
 }
+
