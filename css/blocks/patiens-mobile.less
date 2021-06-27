@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.patiens-mobile {
+  display: none;
+
+  @media @mobile {
+    margin-top: 6.93rem;
+    display: block;
+  }
+}
+
+.patiens-mobile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #333333;
+
+  margin-bottom: 24px;
+}
+
+.patiens-mobile__slide {
+  height: 360px;
+
+  margin: auto;
+
+  cursor: pointer;
+  img {
+    border-radius: 8px 8px 0 0;
+    width: 80%;
+
+    margin: auto;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.patient-mobile__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+
+  width: 80%;
+  margin: auto;
+
+  border-radius: 0 0 8px 8px;
+
+  transition: 0.3s all linear;
+
+  padding: 14px 22px;
+
+  .patient-mobile__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .patient-mobile__species {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .patient-mobile__cause {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    background-color: @primary_blue;
+    color: white;
+  }
+}

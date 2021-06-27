@@ -779,6 +779,14 @@ header.active {
   border-radius: 8px;
   border: none;
 }
+.patiens {
+  display: block;
+}
+@media (max-width: 415px) {
+  .patiens {
+    display: none;
+  }
+}
 .patiens__inner {
   margin-top: -86px;
 }
@@ -887,6 +895,12 @@ header.active {
 }
 .location {
   margin-top: 104px;
+  display: block;
+}
+@media (max-width: 415px) {
+  .location {
+    display: none;
+  }
 }
 .location__title {
   font-style: normal;
@@ -985,6 +999,11 @@ header.active {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 415px) {
+  .footer__inner {
+    display: block;
+  }
+}
 .footer__logo-tagline {
   display: flex;
   padding-top: 52px;
@@ -997,11 +1016,23 @@ header.active {
   padding-bottom: 60px;
   flex-wrap: wrap;
 }
+@media (max-width: 415px) {
+  .footer__tagline {
+    display: none;
+  }
+}
 .footer__navigation {
   padding-top: 64px;
   padding-bottom: 64px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 415px) {
+  .footer__navigation {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .footer__navigation__first-block {
   display: flex;
@@ -1031,6 +1062,11 @@ header.active {
 }
 .footer__developed-by strong {
   color: #dd5d5d;
+}
+@media (max-width: 415px) {
+  .footer__developed-by {
+    text-align: start;
+  }
 }
 .services-mobile {
   display: none;
@@ -1187,4 +1223,160 @@ header.active {
   text-align: center;
   color: #333333;
   margin-bottom: 24px;
+}
+.patiens-mobile {
+  display: none;
+}
+@media (max-width: 415px) {
+  .patiens-mobile {
+    margin-top: 6.93rem;
+    display: block;
+  }
+}
+.patiens-mobile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 24px;
+}
+.patiens-mobile__slide {
+  height: 360px;
+  margin: auto;
+  cursor: pointer;
+}
+.patiens-mobile__slide img {
+  border-radius: 8px 8px 0 0;
+  width: 80%;
+  margin: auto;
+}
+.patiens-mobile__slide:focus {
+  outline: none;
+}
+.patient-mobile__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+  width: 80%;
+  margin: auto;
+  border-radius: 0 0 8px 8px;
+  transition: 0.3s all linear;
+  padding: 14px 22px;
+}
+.patient-mobile__content .patient-mobile__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.patient-mobile__content .patient-mobile__species {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.patient-mobile__content .patient-mobile__cause {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.patient-mobile__content:hover {
+  background-color: #3CABFF;
+  color: white;
+}
+.location-mobile {
+  display: none;
+}
+@media (max-width: 415px) {
+  .location-mobile {
+    margin-top: 104px;
+    display: block;
+  }
+}
+.location-mobile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.location-mobile__info-cart {
+  width: 280px;
+  height: 296px;
+  border-radius: 8px;
+  margin: auto;
+}
+.location-mobile__info-cart__location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 16px 24px;
+  white-space: nowrap;
+}
+.location-mobile__info-cart__location img {
+  width: 20px;
+  height: 24px;
+  margin-right: 18px;
+  align-self: center;
+}
+.location-mobile__info-cart__time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 12px 24px;
+  white-space: nowrap;
+}
+.location-mobile__info-cart__time img {
+  width: 20px;
+  height: 24px;
+  margin-right: 18px;
+  align-self: center;
+}
+.location-mobile__info-cart__phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 16px 24px;
+  white-space: nowrap;
+}
+.location-mobile__info-cart__phone img {
+  width: 20px;
+  height: 24px;
+  margin-right: 18px;
+  align-self: center;
+}
+.location-mobile__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  align-self: center;
+  width: 232px;
+  height: 56px;
+  background: #3cabff;
+  border-radius: 8px;
+  margin: 24px 24px;
+  border: none;
+  transition: 0.2s all linear;
+}
+.location-mobile__button:hover {
+  background-color: #0088ef;
+}
+.location-mobile__google-map {
+  filter: drop-shadow(0px 2px 16px rgba(60, 171, 255, 0.16));
+  border-radius: 8px;
+  margin-bottom: 55px;
 }
