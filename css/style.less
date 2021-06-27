@@ -3,24 +3,31 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 html {
-    font-size: 15px;
-    overflow-x: hidden;
+  font-size: 15px;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    // overflow: hidden;
-    overflow-x: hidden;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Vendor */
@@ -40,3 +47,5 @@ body {
 @import "blocks/footer";
 @import "blocks/services-mobile";
 @import "blocks/about-us-mobile";
+@import "blocks/team-mobile";
+@import "blocks/comments-mobile";

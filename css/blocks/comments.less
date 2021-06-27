@@ -1,63 +1,67 @@
 // main: ../style.less
-
 .comments {
-    margin-bottom: 250px;
+  display: block;
+
+  @media @mobile {
+    display: none;
+  }
+}
+
+.comments__inner {
+  margin-top: 104px;
 }
 
 .comments__title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 48px;
-    
-    text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+
+  text-align: center;
 }
 
 .comments__slider {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .comments__slide {
-    width: 384;
-    height: 240px;
+  width: 384;
+  height: 240px;
 
-    background-image: url(/img/Comas.png);
-    background-repeat: no-repeat;
-    background-position-x: 5%;
-    background-position-y: 5%;
+  background-image: url(/img/Comas.png);
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-position-y: 5%;
 }
 
 .comments__content {
-
 }
 
 .comments__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 
-    padding: 24px 24px 0px 24px;
+  padding: 24px 24px 0px 24px;
 }
 
 .comments__who {
-    text-align: end;
+  text-align: end;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 
-    margin-top: 72px;
+  margin-top: 72px;
 }
 
 .comments__date {
-    text-align: end;
+  text-align: end;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
-
-

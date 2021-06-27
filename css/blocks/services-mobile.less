@@ -1,77 +1,87 @@
 // main: ../style.less
 
 .services-mobile {
-    display: none;
-    @media @mobile {
-        display: block;
-    }
+  display: none;
+  @media @mobile {
+    display: block;
+  }
 }
 
 .services-mobile__header {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
 
-    margin-top: 48px;
-    text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .services-mobile__slider {
-    padding-top: 2.6rem;
+  padding-top: 2.6rem;
 }
 
 .services-mobile__slide {
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 250px;
+  width: 250px;
 }
 
 .services-mobile__image {
-    display: block;
+  display: block;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+
+  border-radius: 8px 8px 0px 0px;
+  img {
+    margin: auto;
     width: 100%;
     height: auto;
+    border-radius: 8px 8px 0px 0px;
+  }
 }
 
 .services-mobile__content {
-    padding-top: 1.06rem;
-    padding-bottom: 1.06rem;
+  padding-top: 1.06rem;
+  padding-bottom: 1.06rem;
+  margin-bottom: 24px;
 
-    transition: 0.3s all linear;
+  border-radius: 0 0 8px 8px;
 
-    &:hover {
-        .services-mobile__title {
-            color: white;
-        }
-       
-        background-color: @primary_blue;
-        
+  transition: 0.3s all linear;
+  text-align: center;
+
+  &:hover {
+    .services-mobile__title {
+      color: white;
     }
+
+    background-color: @primary_blue;
+  }
 }
 
 .services__title {
-    text-align: center;
-    color: @primary_blue;
-    font-weight: 500;
-    font-size: 1.6rem;
+  text-align: center;
+  color: @primary_blue;
+  font-weight: 500;
+  font-size: 1.6rem;
 
-    line-height: 2.13rem;
+  line-height: 2.13rem;
 }
 
 .block {
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
-    top:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
 
-    opacity: 80%;
-    text-align: center;
-    padding: 6.4rem 4.93rem;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.6rem;
-    background: @primary_blue;
-    display:none;
+  opacity: 80%;
+  text-align: center;
+  padding: 6.4rem 4.93rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background: @primary_blue;
+  display: none;
 }
-

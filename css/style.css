@@ -14,10 +14,11 @@ h6 {
 html {
   font-size: 15px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   overflow-x: hidden;
 }
@@ -127,6 +128,11 @@ body {
 }
 .slick-dots li.slick-active button {
   background-color: #3CABFF;
+}
+@media (max-width: 415px) {
+  .slick-dots li {
+    margin: 0 8px;
+  }
 }
 .slick-dots button {
   width: 16px;
@@ -472,7 +478,7 @@ header.active {
   overflow: hidden;
   position: relative;
   margin-left: 1rem;
-  margin-bottom: 2.6rem;
+  margin-top: 2.6rem;
   width: 280px;
   height: 224px;
   box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
@@ -517,7 +523,7 @@ header.active {
   display: none;
 }
 .about-us {
-  margin-top: 6.93rem;
+  margin-top: 104px;
   display: block;
 }
 @media (max-width: 415px) {
@@ -549,6 +555,11 @@ header.active {
   line-height: 24px;
   color: #333;
 }
+@media (max-width: 415px) {
+  #page {
+    display: none;
+  }
+}
 .slider-text {
   margin-right: 375px;
 }
@@ -569,10 +580,9 @@ header.active {
 }
 .column {
   margin-top: 2.6rem;
-  margin-bottom: 250px;
 }
 #page {
-  margin: 150px 0;
+  margin: 104px 0;
 }
 .h3 {
   background: #f0f0f0;
@@ -632,6 +642,7 @@ header.active {
 .team__doctors-info {
   display: flex;
   max-width: 800px;
+  min-height: 800px;
 }
 .team__slider {
   display: flex;
@@ -768,8 +779,8 @@ header.active {
   border-radius: 8px;
   border: none;
 }
-.patiens {
-  margin-bottom: 250px;
+.patiens__inner {
+  margin-top: -86px;
 }
 .patiens__title {
   font-style: normal;
@@ -786,7 +797,7 @@ header.active {
   cursor: pointer;
 }
 .patiens__slide img {
-  border-radius: 8px 8px 0 0 ;
+  border-radius: 8px 8px 0 0;
 }
 .patiens__slide:focus {
   outline: none;
@@ -824,7 +835,15 @@ header.active {
   line-height: 24px;
 }
 .comments {
-  margin-bottom: 250px;
+  display: block;
+}
+@media (max-width: 415px) {
+  .comments {
+    display: none;
+  }
+}
+.comments__inner {
+  margin-top: 104px;
 }
 .comments__title {
   font-style: normal;
@@ -865,6 +884,9 @@ header.active {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+.location {
+  margin-top: 104px;
 }
 .location__title {
   font-style: normal;
@@ -935,13 +957,13 @@ header.active {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   white-space: nowrap;
   align-self: center;
   width: 232px;
   height: 56px;
   padding: 12px 16px;
-  background: #3CABFF;
+  background: #3cabff;
   border-radius: 8px;
   margin: 24px 24px;
   border: none;
@@ -957,6 +979,7 @@ header.active {
 }
 .footer {
   background-color: rgba(60, 171, 255, 0.32);
+  margin-top: 104px;
 }
 .footer__inner {
   display: flex;
@@ -1023,6 +1046,7 @@ header.active {
   font-size: 24px;
   line-height: 32px;
   margin-top: 48px;
+  margin-bottom: 24px;
   text-align: center;
 }
 .services-mobile__slider {
@@ -1034,13 +1058,22 @@ header.active {
 }
 .services-mobile__image {
   display: block;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+  border-radius: 8px 8px 0px 0px;
+}
+.services-mobile__image img {
+  margin: auto;
   width: 100%;
   height: auto;
+  border-radius: 8px 8px 0px 0px;
 }
 .services-mobile__content {
   padding-top: 1.06rem;
   padding-bottom: 1.06rem;
+  margin-bottom: 24px;
+  border-radius: 0 0 8px 8px;
   transition: 0.3s all linear;
+  text-align: center;
 }
 .services-mobile__content:hover {
   background-color: #3CABFF;
@@ -1107,4 +1140,51 @@ header.active {
   font-size: 18px;
   line-height: 24px;
   color: #333;
+}
+.team-mobile {
+  display: none;
+}
+@media (max-width: 415px) {
+  .team-mobile {
+    display: block;
+    margin: 100px 0;
+  }
+}
+.team-mobile__image {
+  width: 100%;
+  max-height: 360px;
+}
+.team-mobile__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 24px;
+  color: #3CABFF;
+}
+.team-mobile__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  color: #333333;
+}
+.comments-mobile {
+  display: none;
+}
+@media (max-width: 415px) {
+  .comments-mobile {
+    margin-top: 6.93rem;
+    display: block;
+  }
+}
+.comments-mobile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 24px;
 }

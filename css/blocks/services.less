@@ -1,90 +1,86 @@
 // main: ../style.less
 
 .services {
-    padding-top: 13.3rem;
+  padding-top: 13.3rem;
 
-    @media @mobile {
-        display: none;
-    }
+  @media @mobile {
+    display: none;
+  }
 }
 
 .services__header {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 48px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .services__cards {
-    padding-top: 2.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+  padding-top: 2.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .services__card {
-    overflow: hidden;
+  overflow: hidden;
 
-    position:relative;
+  position: relative;
 
-    margin-left: 1rem;
-    margin-bottom: 2.6rem;
+  margin-left: 1rem;
+  margin-top: 2.6rem;
 
-    width: 280px;
-    height: 224px;
+  width: 280px;
+  height: 224px;
 
-    box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
-    border-radius: 8px;
-
-    
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
+  border-radius: 8px;
 }
 
 .services__image {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .services__content {
-    padding-top: 1.06rem;
-    padding-bottom: 1.06rem;
+  padding-top: 1.06rem;
+  padding-bottom: 1.06rem;
 
-    transition: 0.3s all linear;
+  transition: 0.3s all linear;
 
-    &:hover {
-        .services__title {
-            color: white;
-        }
-       
-        background-color: @primary_blue;
-        
+  &:hover {
+    .services__title {
+      color: white;
     }
+
+    background-color: @primary_blue;
+  }
 }
 
 .services__title {
-    text-align: center;
-    color: @primary_blue;
-    font-weight: 500;
-    font-size: 1.6rem;
+  text-align: center;
+  color: @primary_blue;
+  font-weight: 500;
+  font-size: 1.6rem;
 
-    line-height: 2.13rem;
+  line-height: 2.13rem;
 }
 
 .block {
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
-    top:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
 
-    opacity: 80%;
-    text-align: center;
-    padding: 6.4rem 4.93rem;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.6rem;
-    background: @primary_blue;
-    display:none;
+  opacity: 80%;
+  text-align: center;
+  padding: 6.4rem 4.93rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background: @primary_blue;
+  display: none;
 }

@@ -1,4 +1,11 @@
 // main: ../style.less
+
+#page {
+  @media @mobile {
+    display: none;
+  }
+}
+
 .slider-text {
   margin-right: 375px;
 }
@@ -27,11 +34,11 @@
 
 .column {
   margin-top: 2.6rem;
-  margin-bottom: 250px;
+  // margin-bottom: 250px;
 }
 
 #page {
-  margin: 150px 0;
+  margin: 104px 0;
 }
 .h3 {
   background: #f0f0f0;
@@ -106,6 +113,7 @@
   display: flex;
 
   max-width: 800px;
+  min-height: 800px;
 }
 
 .team__slider {
