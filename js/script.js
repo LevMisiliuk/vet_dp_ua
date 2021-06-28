@@ -170,8 +170,6 @@ $(function () {
 
     $(modalId).addClass('show');
     $("html").addClass('no-scroll')
-
-    console.log(modalId)
   })
 
   modalClose.on("click", function(event) {
@@ -181,7 +179,5 @@ $(function () {
 
     modalParent.removeClass('show');
     $("html").removeClass('no-scroll')
-
-    console.log(modalId)
   })
 })

@@ -2,6 +2,18 @@
 
 .modal-content {
   padding: 40px 240px;
+
+  @media @mobile {
+    padding: 16px 24px;
+  }
+}
+
+.modal-content__images {
+  @media @mobile {
+    img {
+      max-width: 318px;
+    }
+  }
 }
 
 .modal-content__title {
@@ -13,6 +25,15 @@
   margin-bottom: 24px;
 
   color: #333333;
+
+  @media @mobile {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #333333;
+  }
 }
 
 .modal-content__subtitle {
@@ -24,6 +45,11 @@
   margin-top: 24px;
 
   color: #333333;
+
+  @media @mobile {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .modal-content__text {
@@ -43,7 +69,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 56px;
+  line-height: 24px;
 
   margin-top: 16px;
 

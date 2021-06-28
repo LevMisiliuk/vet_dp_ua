@@ -229,6 +229,7 @@ header {
 }
 header.active {
   background-color: white;
+  box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
 }
 .header__inner {
   display: flex;
@@ -358,6 +359,7 @@ header.active {
 .intro_inner {
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .intro__title {
   font-weight: bold;
@@ -410,7 +412,33 @@ header.active {
 }
 @media (max-width: 415px) {
   .intro__btn {
-    margin-left: 55px;
+    display: none;
+  }
+}
+.intro-mobile__btn {
+  display: none;
+}
+@media (max-width: 415px) {
+  .intro-mobile__btn {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    background: #3cabff;
+    width: 212px;
+    height: 56px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.2s all linear;
+    margin: auto;
+  }
+  .intro-mobile__btn:hover {
+    background-color: #0088ef;
   }
 }
 .intro__photo__buble {
@@ -478,6 +506,7 @@ header.active {
   justify-content: space-between;
 }
 .services__cards button {
+  cursor: pointer;
   border: none;
   background: none;
   padding: 0;
@@ -554,6 +583,7 @@ header.active {
 .about-us__title {
   margin: 0.53rem;
   font-weight: 500;
+  font-style: normal;
   font-size: 24px;
   line-height: 32px;
   color: #3CABFF;
@@ -1100,6 +1130,12 @@ header.active {
   overflow: hidden;
   width: 250px;
 }
+.services-mobile__slide button {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+}
 .services-mobile__image {
   display: block;
   box-shadow: 0px 2px 16px rgba(60, 171, 255, 0.16);
@@ -1431,6 +1467,16 @@ header.active {
 .modal-content {
   padding: 40px 240px;
 }
+@media (max-width: 415px) {
+  .modal-content {
+    padding: 16px 24px;
+  }
+}
+@media (max-width: 415px) {
+  .modal-content__images img {
+    max-width: 318px;
+  }
+}
 .modal-content__title {
   font-style: normal;
   font-weight: bold;
@@ -1439,6 +1485,15 @@ header.active {
   margin-bottom: 24px;
   color: #333333;
 }
+@media (max-width: 415px) {
+  .modal-content__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+  }
+}
 .modal-content__subtitle {
   font-style: normal;
   font-weight: bold;
@@ -1446,6 +1501,12 @@ header.active {
   line-height: 56px;
   margin-top: 24px;
   color: #333333;
+}
+@media (max-width: 415px) {
+  .modal-content__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .modal-content__text {
   font-style: normal;
@@ -1461,7 +1522,7 @@ header.active {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 56px;
+  line-height: 24px;
   margin-top: 16px;
   color: #333333;
 }
