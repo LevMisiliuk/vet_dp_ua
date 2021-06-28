@@ -156,4 +156,32 @@ $(function () {
   $('.header__burger').click(function (e) {
     $('.header__burger, .nav').toggleClass('active')
   })
+
+
+  //modals
+
+  const modalCall = $("[data-modal]");
+  const modalClose = $("[data-close]");
+
+  modalCall.on("click", function(event) {
+    event.preventDefault;
+    let $this = $(this);
+    let modalId = $this.data('modal');
+
+    $(modalId).addClass('show');
+    $("html").addClass('no-scroll')
+
+    console.log(modalId)
+  })
+
+  modalClose.on("click", function(event) {
+    event.preventDefault;
+    let $this = $(this);
+    let modalParent = $this.parents('.modal');
+
+    modalParent.removeClass('show');
+    $("html").removeClass('no-scroll')
+
+    console.log(modalId)
+  })
 })

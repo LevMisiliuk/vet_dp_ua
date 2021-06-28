@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300,300i,4000,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>vet.dp.ua</title>
 </head>
 
@@ -50,7 +51,7 @@
                     <h2 class="intro__subtitle">Человеческое отношение<br>
                         к животным
                     </h2>
-                    <a class="intro__btn" href="tel: +380992941292">
+                    <a class="intro__btn" href="tel: +380975557439">
                         Позвонить нам
                     </a>
                 </div>
@@ -68,37 +69,43 @@
             <h1 class="services__header">Услуги</h1>
             <div class="services__cards">
                 <div class="services__card">
-                    <div class="block">Подробнее</div>
-                    <div class="services__image">
-                        <img src="./img/MRI.png" alt="Services_1">
-                    </div>
-                    <div class="services__content">
-                        <h2 class="services__title">
-                            МРТ
-                        </h2>
-                    </div>
+                    <button type="button" data-modal="#mri">
+                        <div class="block">Подробнее</div>
+                        <div class="services__image">
+                            <img src="./img/MRI.png" alt="Services_1">
+                        </div>
+                        <div class="services__content">
+                            <h2 class="services__title">
+                                МРТ
+                            </h2>
+                        </div>
+                    </button>
                 </div>
                 <div class="services__card">
-                    <div class="block">Подробнее</div>
-                    <div class="services__image">
-                        <img src="./img/gas_anastesia.png" alt="Services_2">
-                    </div>
-                    <div class="services__content">
-                        <h2 class="services__title">
-                            Газовый наркоз
-                        </h2>
-                    </div>
+                    <button type="button" data-modal="#gas_anastesia">
+                        <div class="block">Подробнее</div>
+                        <div class="services__image">
+                            <img src="./img/gas_anastesia.png" alt="Services_2">
+                        </div>
+                        <div class="services__content">
+                            <h2 class="services__title">
+                                Газовый наркоз
+                            </h2>
+                        </div>
+                    </button>
                 </div>
                 <div class="services__card">
-                    <div class="block">Подробнее</div>
-                    <div class="services__image">
-                        <img src="./img/vactination.png" alt="Services_3">
-                    </div>
-                    <div class="services__content">
-                        <h2 class="services__title">
-                            Вакцинация
-                        </h2>
-                    </div>
+                    <button type="button" data-modal="#vactination">
+                        <div class="block">Подробнее</div>
+                        <div class="services__image">
+                            <img src="./img/vactination.png" alt="Services_3">
+                        </div>
+                        <div class="services__content">
+                            <h2 class="services__title">
+                                Вакцинация
+                            </h2>
+                        </div>
+                    </button>
                 </div>
                 <div class="services__card">
                     <div class="block">Подробнее</div>
@@ -123,15 +130,17 @@
                     </div>
                 </div>
                 <div class="services__card">
-                    <div class="block">Подробнее</div>
-                    <div class="services__image">
-                        <img src="./img/reception.png" alt="Services_6">
-                    </div>
-                    <div class="services__content">
-                        <h2 class="services__title">
-                            Приём
-                        </h2>
-                    </div>
+                    <button type="button" data-modal="#reception">
+                        <div class="block">Подробнее</div>
+                        <div class="services__image">
+                            <img src="./img/reception.png" alt="Services_6">
+                        </div>
+                        <div class="services__content">
+                            <h2 class="services__title">
+                                Приём
+                            </h2>
+                        </div>
+                    </button>
                 </div>
                 <div class="services__card">
                     <div class="block">Подробнее</div>
@@ -316,6 +325,9 @@
                                 <img src="./img/mobile_igor.png" alt="">
                             </div>
                             <div class="slider-nav__small-images">
+                                <img src="./img/mobile_kate.png" alt="">
+                            </div>
+                            <div class="slider-nav__small-images">
                                 <img src="./img/mobile_hope.png" alt="">
                             </div>
                             <div class="slider-nav__small-images">
@@ -325,22 +337,25 @@
 
                         <div class="slider slider-single">
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Valeriy.jpg" alt="">
+                                <img src="./img/Valeriy_desktop.png" alt="">
                             </div>
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Natalia.jpg" alt="">
+                                <img src="./img/natalia_desktop.png" alt="">
                             </div>
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Marina.jpg" alt="">
+                                <img src="./img/marina_desktop.png" alt="">
                             </div>
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Igor.jpg" alt="">
+                                <img src="./img/igor_desktop.png" alt="">
                             </div>
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Hope.jpg" alt="">
+                                <img src="./img/ekaterina_desktop.png" alt="">
                             </div>
                             <div class="slider-single__main-photo">
-                                <img src="./img/photo-Vladislav.jpg" alt="">
+                                <img src="./img/nadejda_desktop.png" alt="">
+                            </div>
+                            <div class="slider-single__main-photo">
+                                <img src="./img/vladislav_desktop.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -424,10 +439,10 @@
                                                 </div>
                                                 <div class="team__buttons">
                                                     <div class="team__button-diploma">
-                                                        <a href="/img/diploma_valeriy.jpg" download>Диплом</a>
+                                                        <a href="/img/diplom_valeriy_olegovich.pdf" download>Диплом</a>
                                                     </div>
                                                     <div class="team__button-identity">
-                                                        <a href="/img/certification_valeriy.jpg"
+                                                        <a href="/img/identety_veleriy_olegovich.pdf"
                                                             download="">Удостоверение</a>
                                                     </div>
                                                 </div>
@@ -517,10 +532,10 @@
                                                 </div>
                                                 <div class="team__buttons">
                                                     <div class="team__button-diploma">
-                                                        <a href="/img/Arrow-right.png" download>Диплом</a>
+                                                        <a href="/img/diploma_natilia_michailovna.pdf" download>Диплом</a>
                                                     </div>
                                                     <div class="team__button-identity">
-                                                        <a href="/img/Arrow-right.png" download="">Удостоверение</a>
+                                                        <a href="/img/identety_natalia_michailovna.pdf" download>Удостоверение</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -575,10 +590,7 @@
                                                 </div>
                                                 <div class="team__buttons">
                                                     <div class="team__button-diploma">
-                                                        <a href="/img/Arrow-right.png" download>Диплом</a>
-                                                    </div>
-                                                    <div class="team__button-identity">
-                                                        <a href="/img/Arrow-right.png" download="">Удостоверение</a>
+                                                        <a href="/img/diploma_marina_urievna.pdf" download>Диплом</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -643,10 +655,83 @@
                                                 </div>
                                                 <div class="team__buttons">
                                                     <div class="team__button-diploma">
-                                                        <a href="/img/Arrow-right.png" download>Диплом</a>
+                                                        <a href="/img/diploma_igor_igorevich.pdf" download>Диплом</a>
                                                     </div>
-                                                    <div class="team__button-identity">
-                                                        <a href="/img/Arrow-right.png" download="">Удостоверение</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-displaying">
+                                <div class="">
+                                    <div class="ekaterina_krivaya">
+                                        <div class="team__doctor-name">
+                                            Кривая Екатерина Евгеньевна
+                                        </div>
+                                        <div class="team__doctors-info">
+                                            <div class="team__doctors-main-info">
+                                                <div class="team__doctor-position">
+                                                    <div class="team__doctor-position__position"><strong>Должность:
+                                                        </strong></div>
+                                                        Ветеринарный хирург, травматолог
+                                                </div>
+                                                <div class="team__doctor-education">
+                                                    <div class="team__doctor-position__education"><strong>Образование:
+                                                        </strong></div>
+                                                        Окончила Днепропетровский государственный аграрный университет, факультет ветеринарной медицины
+                                                </div>
+                                                <div class="team__doctor-experience">
+                                                    <div class="team__doctor-position__experience"><strong>Стаж:
+                                                        </strong></div>
+                                                    11 лет
+                                                </div>
+                                                <div class="team__other-info">
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Участник отечественных и международных конференций
+                                                        </p>
+                                                    </div>
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Курсы повышения квалификации WSAVA   по теме: «Хирургические вмешательства для сохранения тазовых конечностей», 2017 год
+                                                        </p>
+                                                    </div>
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Сумская хирургическая конференция.  Мастер класс по остеосинтезу  аппаратом Илизарова, 2019 год
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Мастер-класс по хирургическому лечению разрыва передней крестообразной связки методом ТТА. Лектор Клубань В. А. Днепр, 2020 год
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Более 250 первичных  пациентов  в год, наблюдающихся по хирургической патологии
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="team__other-info__block">
+                                                        <img src="./img/Blue-cross.png" alt="">
+                                                        <p>
+                                                            Специализируется по травматологии, накостный и внеочаговый остеосинтез конечностей, использование аппарата Илизарова при лечении переломов
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="team__buttons">
+                                                    <div class="team__button-diploma">
+                                                        <a href="/img/diploma_ekaterina_evgenievna.pdf" download>Диплом</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -707,14 +792,6 @@
                                                             заболевания, эндоскопические исследования с помощью жесткого
                                                             эндоскопа.
                                                         </p>
-                                                    </div>
-                                                </div>
-                                                <div class="team__buttons">
-                                                    <div class="team__button-diploma">
-                                                        <a href="/img/Arrow-right.png" download>Диплом</a>
-                                                    </div>
-                                                    <div class="team__button-identity">
-                                                        <a href="/img/Arrow-right.png" download="">Удостоверение</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -798,10 +875,7 @@
                                                 </div>
                                                 <div class="team__buttons">
                                                     <div class="team__button-diploma">
-                                                        <a href="/img/Arrow-right.png" download>Диплом</a>
-                                                    </div>
-                                                    <div class="team__button-identity">
-                                                        <a href="/img/Arrow-right.png" download="">Удостоверение</a>
+                                                        <a href="/img/diploma_vladislav_konstantinovich.pdf" download>Диплом</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -838,97 +912,120 @@
                 </div>
             </div>
             <div class="team-mobile__slide">
-                <img class="team-mobile__image" src="/img/valeriy_mobile.png">
+                <img class="team-mobile__image" src="/img/natalia_mobile.png">
                 <div class="container">
-                    <h2 class="team-mobile__title">Мисилюк Валерий Олегович</h2>
+                    <h2 class="team-mobile__title">Мисилюк Наталия Михайловна</h2>
                     <div class="team-mobile__paragraph">
                         <strong>Должность:</strong><br>
-                        Директор клиники, ведущий специалист по ортопедии и травматологии
+                        Главный врач клиники. Специализация хирургия (абдоминальная, торакальная, нейрохирургия). 
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Образование</strong><br>
-                        Медицинский факультет Петрозаводского государственного университета (Специальность:
-                        ортопед-травматолог, нейрохирург)
+                        Окончила Днепропетровский государственный аграрный университет, факультет ветеринарной медицины. Магистратура по специальности Болезни мелких домашних животных
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Стаж</strong><br>
-                        20 лет
+                        Более 15 лет
                     </div>
                 </div>
             </div>
             <div class="team-mobile__slide">
-                <img class="team-mobile__image" src="/img/valeriy_mobile.png">
+                <img class="team-mobile__image" src="/img/marina_mobile.png">
                 <div class="container">
-                    <h2 class="team-mobile__title">Мисилюк Валерий Олегович</h2>
+                    <h2 class="team-mobile__title">Землянко Марина Юрьевна</h2>
                     <div class="team-mobile__paragraph">
                         <strong>Должность:</strong><br>
-                        Директор клиники, ведущий специалист по ортопедии и травматологии
+                        Ветеринарный администратор
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Образование</strong><br>
-                        Медицинский факультет Петрозаводского государственного университета (Специальность:
-                        ортопед-травматолог, нейрохирург)
+                        Окончила Днепропетровский государственный аграрный университет.
+                        Профессиональная квалификация Врач ветеринарной медицины
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Стаж</strong><br>
-                        20 лет
+                        6 лет
                     </div>
                 </div>
             </div>
             <div class="team-mobile__slide">
-                <img class="team-mobile__image" src="/img/valeriy_mobile.png">
+                <img class="team-mobile__image" src="/img/igor_mobile.png">
                 <div class="container">
-                    <h2 class="team-mobile__title">Мисилюк Валерий Олегович</h2>
+                    <h2 class="team-mobile__title">Матвийчук Игорь Игоревич</h2>
                     <div class="team-mobile__paragraph">
                         <strong>Должность:</strong><br>
-                        Директор клиники, ведущий специалист по ортопедии и травматологии
+                        Ветеринарный анестезиолог
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Образование</strong><br>
-                        Медицинский факультет Петрозаводского государственного университета (Специальность:
-                        ортопед-травматолог, нейрохирург)
+                        Окончил Днепропетровский государственный аграрный университет.
+                        Степень бакалавра. Магистратура на базе Харьковской ветеринарной
+                        академии, профессиональная квалификация Врач ветеринарной медицины
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Стаж</strong><br>
-                        20 лет
+                        5 лет
                     </div>
                 </div>
             </div>
             <div class="team-mobile__slide">
-                <img class="team-mobile__image" src="/img/valeriy_mobile.png">
+                <img class="team-mobile__image" src="/img/ekaterina_mobile.png">
                 <div class="container">
-                    <h2 class="team-mobile__title">Мисилюк Валерий Олегович</h2>
+                    <h2 class="team-mobile__title">Кривая Екатерина Евгеньевна</h2>
                     <div class="team-mobile__paragraph">
                         <strong>Должность:</strong><br>
-                        Директор клиники, ведущий специалист по ортопедии и травматологии
+                        Ветеринарный хирург, травматолог        
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Образование</strong><br>
-                        Медицинский факультет Петрозаводского государственного университета (Специальность:
-                        ортопед-травматолог, нейрохирург)
+                        Окончила Днепропетровский государственный аграрный университет, факультет ветеринарной медицины
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Стаж</strong><br>
-                        20 лет
+                        11 лет
                     </div>
                 </div>
             </div>
+
             <div class="team-mobile__slide">
-                <img class="team-mobile__image" src="/img/valeriy_mobile.png">
+                <img class="team-mobile__image" src="/img/nadejda_mobile.png">
                 <div class="container">
-                    <h2 class="team-mobile__title">Мисилюк Валерий Олегович</h2>
+                    <h2 class="team-mobile__title">Кацемба Надежда Владимировна</h2>
                     <div class="team-mobile__paragraph">
                         <strong>Должность:</strong><br>
-                        Директор клиники, ведущий специалист по ортопедии и травматологии
+                        Ветеринарный дерматолог, терапевт       
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Образование</strong><br>
-                        Медицинский факультет Петрозаводского государственного университета (Специальность:
-                        ортопед-травматолог, нейрохирург)
+                        Окончила Днепропетровский государственный аграрный университет,
+                        факультет ветеринарной медицины с отличием 2009 год.
+                        Степень магистра 2011 год, аспирантура степень кандидата
+                        ветеринарных наук с отличием 2020 год.
                     </div>
                     <div class="team-mobile__paragraph">
                         <strong>Стаж</strong><br>
-                        20 лет
+                        10 лет
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-mobile__slide">
+                <img class="team-mobile__image" src="/img/valdislav_mobile.png">
+                <div class="container">
+                    <h2 class="team-mobile__title">Бурко Владислав Константинович</h2>
+                    <div class="team-mobile__paragraph">
+                        <strong>Должность:</strong><br>
+                        Ветеринарный анестезиолог
+                    </div>
+                    <div class="team-mobile__paragraph">
+                        <strong>Образование</strong><br>
+                        Окончил Днепропетровский государственный аграрный университет.
+                        Степень бакалавра и магистра. Профессиональная квалификация Врач
+                        ветеринарной медицины
+                    </div>
+                    <div class="team-mobile__paragraph">
+                        <strong>Стаж</strong><br>
+                        3 лет
                     </div>
                 </div>
             </div>
@@ -1340,9 +1437,153 @@
         </div>
     </footer>
 
+    <!-- Modals MRI -->
+    <div class="modal" id="mri">
+        <div class="modal__dialog">
+            <div class="modal__MRI">
+                <button class="modal-close" type="button" data-close>
+                    <img src="./img/close.png" alt="Close">
+                </button>
+                <div class="modal-content">
+                    <div class="modal-content__title">
+                        Магнитно-резонансная томография (МРТ)
+                    </div>
+                    <div class="modal-content__text">
+                        В нашей клинике есть возможность  проведения МРТ для животных. Исследования проводят на аппарате мощностью 1,5 и  3 Тесла.
+                        Данное исследование проводится в течение 45-60 минут один участок (например, шейный отдел позвоночника или головной мозг), поэтому у животных обязательным условием  является  проведение общей анестезии для полной неподвижности. В качестве  анестетика используется  снотворное короткого действия, которое вводится В/В. Также  во время седации животному вводят трубку в дыхательные пути с целью профилактики осложнений.  
+                        До исследования проводится стандартный осмотр животного анестезиологом, посленаркозное  наблюдение тоже осуществляется квалифицированным персоналом. Это может занять 3-4 часа, или даже более, после чего владельцы получают полностью проснувшегося пациента и результаты исследования (с их описанием и  диагнозом патологии). 
+                        Срез ткани на МРТ составляет 0,2 мм, что позволяет выявить даже самые маленькие новообразования.
+                        Для проведения данного исследования необходимо иметь направление от лечащего врача, где указан предварительный диагноз, отдел исследования (головной мозг, спинной мозг: шейный, грудной отдел и так далее). Также  результаты анализов крови гематологический, биохимический, сданные не позднее 14 дней на момент исследования. 
+    
+                        МРТ – магнитно-резонансная томография — томографический способ исследования внутренних органов и тканей с использованием  явления ядерно-магнитного резонанса.  В основе МРТ лежат свойства магнитного поля. МРТ включает помещение тела пациента в сильное магнитное поле, которое вызывает  определенную ориентацию положительно заряженных протонов.  Ткани с высоким содержанием водорода изображаются четко (хрящевая ткань, ткани мозга, внутренние органы, опухоли мягких тканей),  тогда как ткани с низким его содержанием, например,  кости и воздух  - нет.  
+                        Наиболее часто МРТ  у животных используют  для выявления  опухолей  и новообразований в области головы, головного мозга и спинного мозга, патологии межпозвоночных дисков (компрессия спинного мозга) , при оценке толщины хряща при болезнях суставов у крупных собак,  средних отитов, новообразованиях носовой полости.
+    
+                        Показания к проведению МРТ:
+                        - парез или паралич  тазовых или грудных конечностей у мелких и средних пород собак (при подозрение на пролапс межпозвоночного диска)
+                        - «кривошея»
+                        - хождение животного по кругу
+                        - анизокария или разная величина зрачков;
+                        - судороги любой этиологии, эпилепсия;
+                        - хромота  на грудные или тазовые конечности у крупных пород собак (патологии коленних суставов,  тазобедренных суставов, плече-лопаточных  суставов, локтевых суставов). Например, определить точно, разорвана ли передняя крестообразная связка у собаки, неинвазивно - можно только с помощью МРТ.
+                        - выявление внутричерепных гематом при травмах головы
+                        - слизистые с кровью выделения из носа у собак, продолжающие длительный период и не поддающиеся лечению препаратами.
+    
+                        МРТ является безопасным неинвазивным методом исследования с самой высокой точностью диагностики патологии мягких тканей.
+    
+                        <div class="modal-content__subtitle">
+                            Пролапс межпозвоночного диска уровень С3-С4  
+                        </div>  
+                            <img src="./img/mri_for_modal_1.png" alt="">   
+                            <img src="./img/mri_for_modal_2.png" alt="">   
+                            <img src="./img/mri_for_modal_3.png" alt="">
+    
+                        <div class="modal-content__subtitle">
+                            Опухоль головного мозга (кошка) 
+                        </div> 
+                            <img src="./img/mri_for_modal_4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Modal gas anastesia -->
+    <div class="modal" id="gas_anastesia">
+        <div class="modal__dialog">
+            <div class="modal__gas-anastesia">
+                <button class="modal-close" type="button" data-close>
+                    <img src="./img/close.png" alt="Close">
+                </button>
+                <div class="modal-content">
+                    <div class="modal-content__title">
+                        Газовый наркоз
+                    </div>
+                    <div class="modal-content__text">
+                        Что же такое газовый наркоз? Это вид анестезии, при котором пациент дышит специальной газовой смесью анестетика с  кислородом, благодаря чему засыпает, теряет определенный вид  чувствительности. Газ проходит только через легкие, печень и почки не участвуют в выведении и  нейтрализации газовой смеси, благодаря чему мы можем проводить операции пациентам с гепатопатиями и нефропатиями. После отключения поступления газовой смеси пациент просыпается в течение 5-20 минут. Чтобы смесь поступила в легкие пациенту, анестезиолог вводит дыхательную трубку (интубирует), к которой подключает контур со смесью. Для введения трубки в дыхательные пути, анестезиолог предварительно расслабляет пациента, чтобы он спокойно дал себя заинтубировать
+    
+                        <div class="modal-content__subtitle">
+                            Ингаляционная анестезия (газовый наркоз)  
+                        </div>  
+                        является наиболее безопасным видом анестезии. Ее используют для маленьких пациентов, животных со сниженной массой тела, в тяжелых состояниях, а также пожилым животным. <br>
+                        Наша клиника одна из первых в городе стала использовать ингаляционную анестезию животным. Благодаря этому повысилась выживаемость пациентов после сложных операций, пациентов в тяжелом состоянии. Также благодаря этому виду анестезии мы можем проводить операции длительные по времени (3-4 часа), не беспокоясь о передозировке анестетиков, получаемых пациентами во время наркоза.
+                        <div class="modal-content__small-text">
+                            Желаем Вашим питомцам приятных и безболезненных снов во время операций
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal reception -->
+    <div class="modal" id="reception">
+        <div class="modal__dialog">
+            <div class="modal__reception">
+                <button class="modal-close" type="button" data-close>
+                    <img src="./img/close.png" alt="Close">
+                </button>
+                <div class="modal-content">
+                    <div class="modal-content__title">
+                        Прием
+                    </div>
+                    <div class="modal-content__text">
+                        В клинике принимают не только врачи-терапевты, но и узкопрофильные специалисты с разной специализацией: хирург, офтальмолог, травматолог, невролог, дерматолог, гастро-энтеролог, анестезиолог. Это означает, что не стоит записываться к хирургу с дерматологической проблемой. Поскольку хирург хорошо оперирует, а дерматолог также хорошо лечит кожные болезни. На стационаре и после операций пациентам выполняют назначения ассистенты врачей. Они главные помощники врачей, как нянечки в детском саду: и успокоят, и одеяльцем укроют и погладят, и поменяют мокрые памперсные пеленки, и накормят теплым и вкусным кормом, и поставят обезболивание, чтобы не болело и спалось спокойно.
+                        Для осмотра у узкого специалиста необходимо записаться на прием в регистратуре. При первичном осмотре у животного могут взять анализы крови, сделать узи, рентген, если в этом будет необходимость. 
+                        На операции пациентов также записывают. Начинаются операции в операционные дни с 12 часов. 
+                        Стационарное лечение. Животные размещаются в отдельные клетки на матрасики с теплыми грелками. Каждое животное находится в отдельной клетке. Стационар разделен на кошачий и собачий, чтобы не вызывать стресс у кошачьих  пациентов. Потому что, когда под кошкой сидит собака, хоть и тихая, но это же все равно СОБАКА.
+                        На стационаре находятся животные, которым выполняют назначения по лечению терапевтических патологий, а также реабилитация в послеоперационный период, наблюдают за пациентами, пробуждающихся после недлительных оперативных вмешательств или манипуляций, выполняемые под анестезией (санация ротовой полости, рентгены под анестезией, стерилизация, кастрация, наложение швов на рану).
+                        Выписка со стационара происходит с 16-18 часов, поскольку именно в это время врачи подробно объясняют какие манипуляции нужно выполнять дома для успешного выздоровления.
+                        <div class="modal-content__small-text">
+                            Желаем вашим питомцам недлительных стационаров и благоприятных выписок домой
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal vactination -->
+    <div class="modal" id="vactination">
+        <div class="modal__dialog">
+            <div class="modal__reception">
+                <button class="modal-close" type="button" data-close>
+                    <img src="./img/close.png" alt="Close">
+                </button>
+                <div class="modal-content">
+                    <div class="modal-content__title">
+                        Вакцинации
+                    </div>
+                    <div class="modal-content__text">
+                        Вакцинация – это профилактическое мероприятие, инъекция (прививка, укол) препарата, в состав которого входит убитый вирус. При попадании в организм животного вирус вызывает  выработку защитных клеток (иммунноглобулинов, антител). Другими словами вакцинация – это иммунитет. 
+                        До года животному необходимо сделать 3 прививки: 
+                        2 месяца
+                        3 месяца (через 21-28 день)
+                        6 месяцев (после смены зубов) – 1 год
+                        Затем вакцинацию проводят 1 раз в год комплексной вакциной (прививкой). Перед проведением прививки животному ОБЯЗАТЕЛЬНО дают противоглистное средство. С профилактической целью его дают 1 раз в 3 месяца взрослому животному. 
+                        Прививка от бешенства делается 1 раз в год. Начало вакцинации от бешенства в Украине с 3-месячного возраста.
+                        <div class="attantion">
+                            Бешенство НЕ ЛЕЧИТСЯ ни у людей, ни у животных. Это заболевание со 100% летальным исходом. 
+                            Поэтому делайте ежегодные прививки от бешенства своему питомцу.
+                        </div> 
+                        Приобретая щенка или котенка в дом, обязательно проверяйте наличие прививок. Питомец должен быть вакцинирован дважды и забрать его можно уже через 2 недели, после последней вакцинации, не беспокоясь о том, что он заболеет вирусным заболеванием.
+                        Прививки должны быть сделаны только специалистом ветеринарной клиники, поскольку биологические препараты должны правильно храниться. В паспорте должна стоять  подпись врача, проводившего вакцинацию, и обязательно печать клиники. 
+                        Будьте осторожны, поскольку сейчас появились случаи вакцинации щенков фальшивыми вакцинами. В таких случаях малыши заражаются вирусным энтеритом, смертность которого среди щенков составляет около 95%.
+                        Щенков прививают от распространенных вирусных инфекций: парвовирусный, коронавирусный энтерит, парагрипп, чума плотоядных, лептоспироз, аденовирусная инфекция.
+                        Котят прививают от: панлейкопении, герпесвирусной инфекции, калицивироза.
+                        Выполняйте все профилактические мероприятия после консультации с ветеринарными специалистами. Помните, что когда ребенок заболевает, его показывают не воспитателю детского сада (заводчику в случае с животным), а педиатру (ветеринару в случае с животным).
+                        
+                        <div class="modal-content__small-text">
+                            Желаем Вам регулярных профилактических обработок Ваших хвостатиков и усатиков!
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/vendor/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
