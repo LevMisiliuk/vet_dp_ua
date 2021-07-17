@@ -14,7 +14,6 @@ h6 {
 html {
   font-size: 15px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 html.no-scroll {
   overflow: hidden;
@@ -233,26 +232,10 @@ header.active {
 }
 .header__inner {
   display: flex;
-  align-self: center;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
   position: relative;
   z-index: 2;
-}
-.logo {
-  display: flex;
-}
-.logo__avatar {
-  width: 48px;
-  height: 48px;
-}
-.logo__content {
-  text-transform: uppercase;
-  align-self: center;
-  padding-left: 8px;
-  font-weight: 700;
-  font-size: 1.2rem;
 }
 .nav {
   display: flex;
@@ -274,12 +257,27 @@ header.active {
     padding-left: 0;
   }
 }
-.phone_number {
+.header__main-info a {
+  text-decoration: none;
+  color: white;
+}
+.header__main-info .youtube-icon {
+  margin-right: 26px;
+}
+.header__main-info .viber-icon {
+  margin-right: 26px;
+}
+.header__main-info .phone_number {
   z-index: 10;
+  font-style: normal;
   font-weight: bold;
-  list-style-type: none;
-  background-color: unset;
+  font-size: 18px;
+  line-height: 24px;
   border: none;
+  outline: none;
+  background-color: inherit;
+  text-align: right;
+  color: #333333;
 }
 .header__burger {
   display: none;
@@ -1082,15 +1080,27 @@ header.active {
   flex-direction: column;
   margin-right: 80px;
 }
-.footer__navigation__first-block span {
+.footer__navigation__first-block a {
+  text-decoration: none;
+  color: #333333;
   padding: 15px 0px;
+  transition: 0.2s all linear;
+}
+.footer__navigation__first-block a:hover {
+  color: #0088ef;
 }
 .footer__navigation__second-block {
   display: flex;
   flex-direction: column;
 }
-.footer__navigation__second-block span {
+.footer__navigation__second-block a {
+  text-decoration: none;
+  color: #333333;
   padding: 15px 0px;
+  transition: 0.2s all linear;
+}
+.footer__navigation__second-block a:hover {
+  color: #0088ef;
 }
 .footer__developed-by {
   display: flex;

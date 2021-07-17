@@ -180,4 +180,13 @@ $(function () {
     modalParent.removeClass('show');
     $("html").removeClass('no-scroll')
   })
+
+
+  $('a[href*=#]').bind("click", function(e){
+    var anchor = $(this);
+    $('html, body').stop().animate({
+       scrollTop: $(anchor.attr('href')).offset().top-100
+    }, 1000);
+    e.preventDefault();
+ });
 })
