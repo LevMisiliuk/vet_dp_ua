@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300,300i,4000,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Vet.dp.ua "Ветеринарная скорая помощь на Соколе"</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBBGCZ2P43"></script>
@@ -36,13 +36,18 @@
                     <span></span>
                 </div>
                 <nav class="nav">
-                    <a class="nav__link" href="#services__mobile">Услуги</a>
-                    <a class="nav__link" href="#about-us__mobile">О клинике</a>
-                    <a class="nav__link" href="#comments__mobile">Отзывы</a>
-                    <a class="nav__link" href="#location__mobile">Контакты</a>
+                    <a class="nav__link" href="#services">Услуги</a>
+                    <a class="nav__link" href="#about-us">О клинике</a>
+                    <a class="nav__link" href="#comments">Отзывы</a>
+                    <a class="nav__link" href="#location">Контакты</a>
                 </nav>
-                
                 <div class="header__main-info">
+                    <a href="https://www.youtube.com/channel/UC0hZU6dq90vYk7AAy9S6YXg" target="_blank">
+                        <img class="youtube-icon" src="./img/youtube_icon.png">
+                    </a>
+                    <a href="viber://chat?number=%2B380975557439" target="_blank">
+                        <img class="viber-icon" src="./img/viber_icon.png">
+                    </a>
                     <select class="phone_number">
                         <option>+380975557439</option>
                         <option>+380505557435</option>
@@ -53,8 +58,12 @@
     </header>
     <!-- Intro -->
     <section class="intro">
-        <div class="container">
-            <div class="intro_inner">
+        <div class="video">
+            <video class="video__media" src="./img/video/Сокол.mp4" autoplay muted loop ></video>
+        </div>
+       
+        <div class="intro_inner">
+            <div class="container">
                 <div class="intro__content">
                     <h1 class="intro__title">Ветеринарная <br>скорая помощь <br>на Соколе</h1>
                     <h2 class="intro__subtitle">Человеческое отношение<br>
@@ -64,16 +73,8 @@
                         Позвонить нам
                     </a>
                 </div>
-
-                <img class="intro__photo__cat" src="./img/Cat.png" alt="cat image">
-                <img class="intro__photo__dog" src="./img/Dog.png" alt="dog image">
-                <a class="intro-mobile__btn" href="tel: +380975557439">
-                    Позвонить нам
-                </a>
             </div>
-
         </div>
-        <img class="intro__photo__buble" src="/img/Buble.png" alt="buble image">
     </section>
     <!-- Services -->
     <div class="services" id="services">
@@ -1336,7 +1337,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="patiens__slide" id="#schipperke_the_black_devil">
+                    <div class="patiens__slide" data-modal="#schipperke_the_black_devil">
                         <img class="patient__image" src="/img/shipperke.png" alt="Schipperke the black devil">
                         <div class="patient__content">
                             <div class="patient__name">
@@ -1423,7 +1424,7 @@
                     </div>
                 </div>
 
-                <div class="patiens-mobile__slide" data-modal="#swelling_of_the_nasal_passage">
+                <div class="patiens-mobile__slide" data-modal="#schipperke_the_black_devil">
                     <img class="patient-mobile__image" src="/img/shipperke.png" alt="Swelling of the nasal passage">
                     <div class="patient-mobile__content">
                         <div class="patient-mobile__name">
@@ -1890,6 +1891,7 @@
                     <div class="modal-content__title">
                         Стерилизация кошки
                     </div>
+                    <iframe width="700" height="415" src="https://www.youtube.com/embed/yOc1GVzWv4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="modal-content__text">
                         Стерилизовать кошку можно в любом возрасте, но если сделать это с 6 до 8 месяцев, у неё в старости не будет рака молочной железы.
 

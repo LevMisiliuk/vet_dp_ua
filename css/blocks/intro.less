@@ -1,15 +1,51 @@
 // main: ../style.less
 .intro {
-  padding-top: 150px;
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
 
   @media @mobile {
-    padding-top: 105px;
+    padding-top: 70px;
   }
 }
 
-.intro_inner {
-  display: flex;
+.intro::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  background-color: rgba(32, 65, 90, 0.7);
+}
+
+.video {
   position: relative;
+  padding-bottom: 56.25%;
+  z-index: 1;
+}
+
+.video__media {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 3;
   flex-direction: column;
 }
 
@@ -17,14 +53,22 @@
   font-weight: bold;
   font-size: 4.26rem;
   line-height: 64px;
+  color: #fff;
 
   @media @mobile {
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 38px;
 
     width: 320px;
+  }
+
+  @media @mobile-sm {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
@@ -33,6 +77,7 @@
   font-size: 32px;
   line-height: 32px;
   margin-bottom: 64px;
+  color: #fff;
 
   @media @mobile {
     font-style: normal;
@@ -43,6 +88,15 @@
     width: 320px;
 
     margin-bottom: 250px;
+  }
+
+  @media @mobile-sm {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    width: 320px;
   }
 }
 
@@ -75,86 +129,5 @@
 
   @media @mobile {
     display: none;
-  }
-}
-
-.intro-mobile__btn {
-  display: none;
-
-  @media @mobile {
-    display: block;
-
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    color: #fff;
-
-    white-space: nowrap;
-
-    text-decoration: none;
-
-    color: white;
-    background: #3cabff;
-
-    width: 212px;
-    height: 56px;
-
-    padding: 12px 16px;
-
-    border-radius: 8px;
-    border: none;
-
-    transition: 0.2s all linear;
-
-    margin: auto;
-
-    &:hover {
-      background-color: darken(@primary_blue, 15%);
-    }
-  }
-}
-
-.intro__photo__buble {
-  position: absolute;
-  top: -1px;
-  bottom: -175px;
-  right: 0px;
-  z-index: -1;
-
-  @media @mobile {
-    top: -150px;
-  }
-}
-
-.intro__photo__cat {
-  position: absolute;
-  width: 377px;
-  height: 333px;
-  left: 680px;
-  top: -40px;
-  z-index: 1;
-
-  @media @mobile {
-    width: 154px;
-    height: 136px;
-    left: 10px;
-    // right: -50px;
-    top: 270px;
-  }
-}
-
-.intro__photo__dog {
-  position: absolute;
-  width: 525px;
-  height: 510px;
-  right: -50px;
-  top: -50px;
-  z-index: 2;
-
-  @media @mobile {
-    width: 215px;
-    height: 209px;
-    right: 40px;
-    top: 250px;
   }
 }
