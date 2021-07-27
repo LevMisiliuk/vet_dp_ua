@@ -386,7 +386,7 @@ header.active {
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(32, 65, 90, 0.7);
+  background-color: rgba(32, 65, 90, 0.15);
 }
 .video {
   position: relative;
