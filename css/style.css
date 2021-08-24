@@ -1490,7 +1490,19 @@ header.active {
     width: 338px;
   }
   .modal-content video {
+    width: 295px;
+    height: 215px;
+  }
+}
+@media (max-width: 320px) {
+  .modal-content {
+    padding: 16px 24px;
+  }
+  .modal-content iframe {
     width: 338px;
+  }
+  .modal-content video {
+    width: 245px;
     height: 215px;
   }
 }
