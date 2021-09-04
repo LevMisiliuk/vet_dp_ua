@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.cookie_notice {
+    display: none;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: start;
+    font-size: 14px;
+    color: #fff;
+    background-color: @primary_blue;
+    padding: 10px 20px;
+  
+    @media @mobile {
+      position: fixed;
+    }
+  }
+  
+  .cookie__inner {
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+  
+    .cookie__text {
+      @media @mobile {
+        display: none;
+      }
+    }
+  
+    .cookie__text-mobile {
+      display: none;
+  
+      @media @mobile {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+      }
+    }
+  }
+  
+  .cookie__button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  
+    text-decoration: none;
+    position: relative;
+  
+    padding: 4px 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #373737;
+  
+    background: linear-gradient(@primary_blue 0 0) left / var(--d, 0%) 100% no-repeat;
+    transition: 0.5s;
+  
+    &:hover {
+      --d: 100%;
+      color: #fff;
+    }
+  }
+  
