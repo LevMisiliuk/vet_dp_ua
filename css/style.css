@@ -1480,7 +1480,7 @@ header.active {
   transform: rotate(90deg);
 }
 .modal-content {
-  padding: 40px 240px;
+  padding: 40px 160px;
 }
 @media (max-width: 415px) {
   .modal-content {
@@ -1520,8 +1520,7 @@ header.active {
 .modal-content__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 36px;
   margin-bottom: 24px;
   color: #333333;
 }
