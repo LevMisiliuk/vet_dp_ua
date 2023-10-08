@@ -719,8 +719,14 @@ header.active {
   line-height: 24px;
   display: flex;
 }
-.team__doctor-position strong {
-  padding-right: 32px;
+.team__doctor-position__education {
+  min-width: 140px;
+}
+.team__doctor-position__experience {
+  min-width: 140px;
+}
+.team__doctor-position__position {
+  min-width: 140px;
 }
 .team__doctor-education {
   font-style: normal;
@@ -730,9 +736,6 @@ header.active {
   display: flex;
   padding-top: 16px;
 }
-.team__doctor-education strong {
-  padding-right: 11px;
-}
 .team__doctor-experience {
   font-style: normal;
   font-weight: normal;
@@ -740,9 +743,6 @@ header.active {
   line-height: 24px;
   display: flex;
   padding-top: 16px;
-}
-.team__doctor-experience strong {
-  padding-right: 83px;
 }
 .team__other-info {
   font-style: normal;
@@ -1009,7 +1009,7 @@ header.active {
 .location__button {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 32px;
   text-align: center;
   color: #ffffff;
@@ -1417,7 +1417,7 @@ header.active {
 .location-mobile__button {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 32px;
   text-align: center;
   color: #ffffff;
@@ -1480,7 +1480,7 @@ header.active {
   transform: rotate(90deg);
 }
 .modal-content {
-  padding: 40px 180px;
+  padding: 40px 80px;
 }
 @media (max-width: 768px) {
   .modal-content {
