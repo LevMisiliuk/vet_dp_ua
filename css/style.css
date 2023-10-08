@@ -131,7 +131,7 @@ body {
 .slick-dots li.slick-active button {
   background-color: #3CABFF;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .slick-dots li {
     margin: 0 4px;
   }
@@ -256,7 +256,7 @@ header.active {
 .nav__link:hover {
   color: #3CABFF;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .nav__link {
     padding-left: 0;
   }
@@ -283,7 +283,7 @@ header.active {
   text-align: right;
   color: #333333;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .header__main-info {
     display: none;
   }
@@ -354,7 +354,7 @@ header.active {
     margin-top: 40px;
   }
 }
-@media (max-width: 768px) and (max-width: 415px) {
+@media (max-width: 768px) and (max-width: 768px) {
   .nav {
     width: 70%;
     right: 0;
@@ -372,7 +372,7 @@ header.active {
   max-height: 100vh;
   overflow: hidden;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .intro {
     padding-top: 70px;
   }
@@ -416,7 +416,7 @@ header.active {
   line-height: 64px;
   color: #fff;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .intro__title {
     font-style: normal;
     font-weight: bold;
@@ -440,7 +440,7 @@ header.active {
   margin-bottom: 64px;
   color: #fff;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .intro__subtitle {
     font-style: normal;
     font-weight: normal;
@@ -478,7 +478,7 @@ header.active {
 .intro__btn:hover {
   background-color: #0088ef;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .intro__btn {
     display: none;
   }
@@ -486,7 +486,7 @@ header.active {
 .services {
   margin-top: 136px;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .services {
     display: none;
   }
@@ -561,7 +561,7 @@ header.active {
   margin-top: 136px;
   display: block;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .about-us {
     display: none;
   }
@@ -591,7 +591,7 @@ header.active {
   line-height: 24px;
   color: #333;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   #page {
     display: none;
   }
@@ -818,7 +818,7 @@ header.active {
 .patiens {
   display: block;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .patiens {
     display: none;
   }
@@ -881,7 +881,7 @@ header.active {
 .comments {
   display: block;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .comments {
     display: none;
   }
@@ -938,7 +938,7 @@ header.active {
   margin-top: 136px;
   display: block;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .location {
     display: none;
   }
@@ -1040,7 +1040,7 @@ header.active {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .footer__inner {
     display: block;
   }
@@ -1057,7 +1057,7 @@ header.active {
   padding-bottom: 60px;
   flex-wrap: wrap;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .footer__tagline {
     display: none;
   }
@@ -1068,7 +1068,7 @@ header.active {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .footer__navigation {
     display: block;
     padding-top: 0;
@@ -1116,7 +1116,7 @@ header.active {
 .footer__developed-by strong {
   color: #dd5d5d;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .footer__developed-by {
     text-align: start;
   }
@@ -1124,7 +1124,7 @@ header.active {
 .services-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .services-mobile {
     display: block;
   }
@@ -1201,7 +1201,7 @@ header.active {
 .about-us-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .about-us-mobile {
     margin-top: 6.93rem;
     display: block;
@@ -1239,7 +1239,7 @@ header.active {
 .team-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .team-mobile {
     display: block;
     margin: 100px 0;
@@ -1268,7 +1268,7 @@ header.active {
 .comments-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .comments-mobile {
     margin-top: 6.93rem;
     display: block;
@@ -1286,7 +1286,7 @@ header.active {
 .patiens-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .patiens-mobile {
     margin-top: 6.93rem;
     display: block;
@@ -1349,7 +1349,7 @@ header.active {
 .location-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .location-mobile {
     margin-top: 104px;
     display: block;
@@ -1480,9 +1480,9 @@ header.active {
   transform: rotate(90deg);
 }
 .modal-content {
-  padding: 40px 160px;
+  padding: 40px 180px;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .modal-content {
     padding: 16px 24px;
   }
@@ -1512,7 +1512,7 @@ header.active {
 .modal-content__images img {
   max-width: 700px;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .modal-content__images img {
     max-width: 318px;
   }
@@ -1524,7 +1524,7 @@ header.active {
   margin-bottom: 24px;
   color: #333333;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .modal-content__title {
     font-style: normal;
     font-weight: bold;
@@ -1541,7 +1541,7 @@ header.active {
   margin-top: 24px;
   color: #333333;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .modal-content__subtitle {
     font-size: 18px;
     line-height: 24px;
@@ -1573,7 +1573,7 @@ header.active {
   font-size: 28px;
   line-height: 56px;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .info__link {
     font-size: 18px;
     line-height: 24px;
@@ -1593,7 +1593,7 @@ header.active {
   background-color: #3CABFF;
   padding: 10px 20px;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .cookie_notice {
     position: fixed;
   }
@@ -1603,7 +1603,7 @@ header.active {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .cookie__inner .cookie__text {
     display: none;
   }
@@ -1611,7 +1611,7 @@ header.active {
 .cookie__inner .cookie__text-mobile {
   display: none;
 }
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .cookie__inner .cookie__text-mobile {
     font-style: normal;
     font-weight: normal;
